@@ -1,0 +1,153 @@
+.table {
+  margin: 20px auto;
+  width: 600px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.table__row {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.table__row:nth-child(4) {
+  border-bottom: none;
+}
+
+.table__cell {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+
+.table__cell:nth-child(4) {
+  border-right: none;
+}
+
+.table__cell:hover {
+  cursor: pointer;
+  background: skyblue;
+  color: #fff;
+}
+
+@media only screen and (min-width:600px) {
+  .table {
+    width: 100%;
+  }
+
+  .table__cell {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width:1600px) {
+  .table {
+    width: 1600px;
+  }
+
+  .table__cell {
+    width: 400px;
+  }
+}
+
+.second-table {
+  display: table;
+  margin: 20px auto;
+  width: 600px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.second-table__row {
+  display: table-row;
+}
+
+.second-table__cell {
+  display: table-cell;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.second-table__cell:hover {
+  cursor: pointer;
+  background: skyblue;
+  color: #fff;
+}
+
+@media only screen and (min-width:600px) {
+  .second-table {
+    width: 100%;
+  }
+
+  .second-table__cell {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width:1600px) {
+  .second-table {
+    width: 1600px;
+  }
+
+  .second-table__cell {
+    width: 400px;
+  }
+}
+
+.block {
+  width: 200px;
+  min-height: 50px;
+  margin: 20px auto;
+  background: #368ddc;
+  background: linear-gradient(to bottom, #368ddc, #1b69af);
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: opacity 1s linear 0s;
+}
+
+.block:hover {
+  opacity: 0;
+}
+
+.btn-top {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 0;
+  color: #fff;
+  background: #368ddc;
+  background: linear-gradient(to bottom, #368ddc, #1b69af); 
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.btn-top:hover {
+  font-size: 18px;
+}
+
+.btn-top::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -20px;
+    border: 20px solid transparent;
+    border-bottom: 30px solid #fff;
+}
+
+.btn-top:hover::before {
+    content: "";
+    position: absolute;
+    border: none;
+}
